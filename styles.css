@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #1b89f1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  
+  #input-panel {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  #input-panel h2 {
+    margin-top: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #09960e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #09960e;
+  }
+  
+  
+  #queue-visual {
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  #queue-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .task-card {
+    background-color: #fff;
+    border: 2px solid #09960e;
+    border-radius: 4px;
+    padding: 10px;
+    min-width: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .task-card.low {
+    border-color: #ff9800;
+  }
+  
+  .task-card.high {
+    border-color: #f44336;
+  }
+  
+  
+  #history {
+    width: 90%;
+    max-width: 800px;
+    padding: 10px;
+  }
+  
+  #execution-history {
+    list-style: none;
+    padding: 10px;
+  }
+  
+  #execution-history li {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  footer {
+    background-color: #17d680;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .task-status {
+    margin-left: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.task-status.resolving {
+    color: orange;
+}
+
+.task-status.completed {
+    color: green;
+}
